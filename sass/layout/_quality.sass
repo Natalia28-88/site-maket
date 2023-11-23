@@ -1,0 +1,43 @@
+.quality
+    background-color: #e2dada5e
+    padding: 6rem 0
+    @include respond(tab-port)
+        padding: 4rem 0
+    @include respond(phone)
+        padding: 2rem 0
+    &__block
+
+.block
+    text-align: center
+    &__icon
+        margin-bottom: 3rem
+        @include respond(phone)
+            margin-bottom: 1.5rem
+            img
+                width: 4.5rem
+    &__title
+        color: #353738
+        font-size: 2rem
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: .4rem
+        margin-bottom: 2rem
+        line-height: 3rem
+        @include respond(phone)
+            line-height: 2rem
+            font-size: 1.6rem
+            margin-bottom: 1rem
+    &__text
+            color: #353738
+            font-size: 1.6rem
+            font-weight: 400
+            letter-spacing: .4rem
+            line-height: 3rem
+            @include respond(phone)
+                line-height: 2rem
+                font-size: 1.4rem
+            &_j
+                text-align: left
+                line-height: 2.5rem
+                letter-spacing: .2rem
+

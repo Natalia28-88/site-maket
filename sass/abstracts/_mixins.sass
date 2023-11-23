@@ -1,0 +1,41 @@
+// //Оформление ссылок
+// @mixin style-link ($color)
+//     display: inline-block
+//     text-transform: uppercase
+//     text-decoration: none
+//     color: $color
+
+// @mixin clearfix
+//     &::after     
+//         content: ""
+//         display: table
+//         clear: both
+
+
+//     @content
+
+    
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+        @media only screen and (max-width: 767px)
+            @content
+    
+    @if $breakpoint == tab-port
+        @media only screen and (max-width: 900px)
+            @content
+
+    @if $breakpoint == tab-land
+        @media only screen and (max-width: 1100px)
+            @content
+
+            
+    @if $breakpoint == big-screen
+        @media only screen and (min-width: 1800px)
+            @content
+
+@mixin flexbox 
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
